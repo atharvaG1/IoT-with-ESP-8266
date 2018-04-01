@@ -1,4 +1,4 @@
-# IoT-with-ESP8268: Used to send data to bluemix server.SD card is used as storage device in offline mode.
+# IoT-with-ESP8268:(Also includes SD Card for offline storage).
 
 Just an example and to some extent, a readable code. Not optimized, should not to be directly used in a product.
 Combines IoT Starter code by Ant Elder, Some Example codes for getting,NTP Timestamps,Storage in SD card
