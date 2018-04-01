@@ -1,0 +1,2 @@
+Send a json string with parameters like voltage, current,timestamp, packet count etc to NoSQL DB of IBM Bluemix.
+Add your own authentication parameters.
