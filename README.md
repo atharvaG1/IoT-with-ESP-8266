@@ -3,9 +3,9 @@
 
 Combines IoT Starter code by Ant Elder with some example codes for getting,NTP Timestamps,Storage in SD card
 License: Apache License v2
-Used ESP8266 to send data collected from Solar Inverter processor to  Bluemix NoSQL Server
+Used ESP8266 to send data collected from microcontroller TM4C 1294 to  Bluemix NoSQL Server
 
-Following cases were tested in final code.Data was continuously sent over UART after interval of 10 seconds
+Following cases were tested.Data was sent over UART at interval of 10 seconds
 
 A) Normal Operation:
 
@@ -18,12 +18,12 @@ Inits:- Void setup() of the code. Initializes MQTT, Wi-Fi in both AP and client 
 4. Try to send json string to server.
 5. If sent successfully, check SD card.
 6. If not, store it in sd card and wait for UART data.(Reconnection attempts take place in the background if connection is lost)
-7. If previous string sent sucessfully and If there is a string in SD card try sending that string to the server.
+7. If previous string was sent sucessfully and If there is a string in SD card try sending that string to the server.
 8. If string sent successfully, delete the string from SD card and wait for serial data to arrive
 9. If not,wait for Serial Data to arrive. 
 
 
-B) Communication with some other device(Preferably Android): When SSID or Password of Access point changes(Maybe because when user changes network provider or router)
+B) Communication with some other device(Tested with Android): When SSID or Password of Access point changes(Maybe because user changes network provider or router)
 This was included in the void loop section, but implementation with a software interrupt sounds more intuitive.
  
 1. check for websocket connection request for AP mode. 
